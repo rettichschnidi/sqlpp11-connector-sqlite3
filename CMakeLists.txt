@@ -43,7 +43,7 @@ if(NOT EXISTS ${SQLPP11_INCLUDE_DIR}/sqlpp11/exception.h)
   message(SEND_ERROR "Can't find header.h in ${SQLPP11_INCLUDE_DIR}")
 endif()
 
-message(SEND_MESSAGE "including sqlpp11 from ${SQLPP11_INCLUDE_DIR}")
+message("Including sqlpp11 from ${SQLPP11_INCLUDE_DIR}")
 include_directories("${SQLPP11_INCLUDE_DIR}")
 set(include_dir "${PROJECT_SOURCE_DIR}/include")
 file(GLOB_RECURSE sqlpp_headers ${include_dir}/*.h ${SQLPP11_INCLUDE_DIR}/*.h)
